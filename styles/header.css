@@ -3,6 +3,15 @@
   flex-direction: row;
   height: 55px;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(222, 222, 222);
+
 }
 
 .left-section{
