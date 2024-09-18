@@ -63,12 +63,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: rgb(247, 247, 247);
   border-width: 1px;
   border-color: rgb(204, 204, 204);
   border-style: solid;
   margin-left: -1px;
   margin-right: 8px;
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip{
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity .15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip{
+  opacity: 1;
+
+}
+
+.search-button:hover{
+  background-color: rgba(96, 96, 96, 0.9);
 }
 
 .search-icon{
@@ -80,12 +107,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   border-radius: 20px;
   height: 40px;
   width: 40px;
   border:none;
-  background-color: rgb(248, 248, 248)
+  background-color: rgb(248, 248, 248);
+  position: relative;
 }
+
+
+.voice-search-button .tooltip{
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity .15s;
+  pointer-events: none;
+}
+
 
 .voice-search-icon{
   height: 24px;  
