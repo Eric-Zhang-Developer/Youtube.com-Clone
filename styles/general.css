@@ -11,5 +11,9 @@ body{
   padding-right: 24px;
   background-color: rgb(249, 249, 249);
   font-family: Roboto, Arial;
-  
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
